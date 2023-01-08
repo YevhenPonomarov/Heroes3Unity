@@ -9,12 +9,12 @@ public class GameObjectManager : MonoBehaviour
         if(instance == null) 
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            //DontDestroyOnLoad(this.gameObject);
             return;
         }
-        else if(instance != null)
+        //else if(instance != null)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 }

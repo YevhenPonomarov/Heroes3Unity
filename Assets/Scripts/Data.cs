@@ -7,4 +7,5 @@ public abstract class Data : MonoBehaviour
     public int armor;
     public int initiative;
     public float speed;
+    public Rigidbody2D rb;
 }
