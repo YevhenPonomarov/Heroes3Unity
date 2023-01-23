@@ -14,7 +14,7 @@ public class PopUpManager : MonoBehaviour
     private IPopup _currentPopup;
 
     private static PopUpManager _instance;
-    public static PopUpManager instance
+    public static PopUpManager Instance
     {
         get
         {
@@ -45,7 +45,7 @@ public class PopUpManager : MonoBehaviour
         }
     }
 
-    public void onCloseFinished(IPopup popup)
+    public void OnCloseFinished(IPopup popup)
     {
         if (_currentPopup == popup)
         {

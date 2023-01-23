@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown((KeyCode.Escape)))
         {
-            PopUpManager.instance.CloseCurrentPopup();
+            PopUpManager.Instance.CloseCurrentPopup();
         }
     }
 
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
             {
                 
             });
-        PopUpManager.instance.ShowCommonPopup(model);
+        PopUpManager.Instance.ShowCommonPopup(model);
     }
 
     public void OnClickButton2()
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
             {
                 
             });
-        PopUpManager.instance.ShowCommonPopup(model);
+        PopUpManager.Instance.ShowCommonPopup(model);
     }
 
     public void OnClickButton3()
@@ -73,6 +73,6 @@ public class GameManager : MonoBehaviour
             {
                 
             });
-        PopUpManager.instance.ShowCommonPopup(model);
+        PopUpManager.Instance.ShowCommonPopup(model);
     }
 }

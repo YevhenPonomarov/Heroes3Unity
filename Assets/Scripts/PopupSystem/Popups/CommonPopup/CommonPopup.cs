@@ -9,7 +9,7 @@ namespace PopupSystem.Popups.CommonPopup
 
         protected override IPopupView CreateView(Object res)
         {
-            return GameObject.Instantiate(res, PopUpManager.instance.mainCanvas.transform).GetComponent<CommonPopupView>();
+            return GameObject.Instantiate(res, PopUpManager.Instance.mainCanvas.transform).GetComponent<CommonPopupView>();
         }
 
         public CommonPopup(CommonPopupModel model) : base(model)
@@ -18,7 +18,7 @@ namespace PopupSystem.Popups.CommonPopup
 
         public void OnCloseFinished()
         {
-            PopUpManager.instance.onCloseFinished(this);
+            PopUpManager.Instance.OnCloseFinished(this);
         }
         
     }
