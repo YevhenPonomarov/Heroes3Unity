@@ -15,11 +15,6 @@ namespace PopupSystem.Popups.CommonPopup
         public CommonPopup(CommonPopupModel model) : base(model)
         {
         }
-
-        public void OnCloseFinished()
-        {
-            PopUpManager.Instance.OnCloseFinished(this);
-        }
         
     }
 }

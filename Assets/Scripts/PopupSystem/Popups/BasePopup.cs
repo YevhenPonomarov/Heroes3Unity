@@ -43,5 +43,10 @@ namespace PopupSystem.Popups
             PopUpManager.Instance.PlayAudioClosePopup();
             View.Hide();
         }
+
+        public void OnCloseFinished()
+        {
+            PopUpManager.Instance.OnCloseFinished(this);
+        }
     }
 }
