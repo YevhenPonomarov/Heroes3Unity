@@ -34,11 +34,13 @@ namespace PopupSystem
 
         public void Open()
         {
+            PopUpManager.instance.PlayAudioShowPopup();
             View.Show();
         }
 
         public void Close()
         {
+            PopUpManager.instance.PlayAudioClosePopup();
             View.Hide();
         }
     }

@@ -100,7 +100,7 @@ public class CommonPopupView : PopupView
         {
             _onValidate();
         }
-        Hide();
+        Controller.Close();
     }
 
     public void OnClickCancel()
@@ -109,7 +109,7 @@ public class CommonPopupView : PopupView
         {
             _onCancel();
         }
-        Hide();
+        Controller.Close();
     }
 
     public void OnClickOk()
@@ -118,7 +118,7 @@ public class CommonPopupView : PopupView
         {
             _onOk();
         }
-        Hide();
+        Controller.Close();
     }
 
     public override void Show()

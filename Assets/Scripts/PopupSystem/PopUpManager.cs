@@ -33,8 +33,6 @@ public class PopUpManager : MonoBehaviour
         {
             _currentPopup = new CommonPopup(popupModel);
             _currentPopup.Open();
-            
-            audioSource.PlayOneShot(audioShowPopup);
         }
     }
 
@@ -44,7 +42,6 @@ public class PopUpManager : MonoBehaviour
         {
             _currentPopup.Close();
             
-            audioSource.PlayOneShot(audioClosePopup);
         }
     }
 
@@ -54,5 +51,15 @@ public class PopUpManager : MonoBehaviour
         {
             _currentPopup = null;
         }
+    }
+
+    public void PlayAudioShowPopup()
+    {
+        audioSource.PlayOneShot(audioShowPopup);
+    }
+
+    public void PlayAudioClosePopup()
+    {
+        audioSource.PlayOneShot(audioClosePopup);
     }
 }
