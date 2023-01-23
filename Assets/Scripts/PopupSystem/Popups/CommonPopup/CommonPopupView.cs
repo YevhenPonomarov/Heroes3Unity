@@ -47,42 +47,42 @@ public class CommonPopupView : PopupView
     {
         switch (type)
         {
-            case CommonPopupModel.PopupType.POP_UP_TYPE_T_B_V_C:
+            case CommonPopupModel.PopupType.PopUpTypeTBVC:
                 _titleText.gameObject.SetActive(true);
                 _bodyText.gameObject.SetActive(true);
                 _validateButton.gameObject.SetActive(true);
                 _cancelButton.gameObject.SetActive(true);
                 _okButton.gameObject.SetActive(false);
                 break;
-            case CommonPopupModel.PopupType.POP_UP_TYPE_T_B_O:
+            case CommonPopupModel.PopupType.PopUpTypeTBO:
                 _titleText.gameObject.SetActive(true);
                 _bodyText.gameObject.SetActive(true);
                 _validateButton.gameObject.SetActive(false);
                 _cancelButton.gameObject.SetActive(false);
                 _okButton.gameObject.SetActive(true);
                 break;
-            case CommonPopupModel.PopupType.POP_UP_TYPE_T_V_C:
+            case CommonPopupModel.PopupType.PopUpTypeTVC:
                 _titleText.gameObject.SetActive(true);
                 _bodyText.gameObject.SetActive(false);
                 _validateButton.gameObject.SetActive(true);
                 _cancelButton.gameObject.SetActive(true);
                 _okButton.gameObject.SetActive(false);
                 break;
-            case CommonPopupModel.PopupType.POP_UP_TYPE_T_O:
+            case CommonPopupModel.PopupType.PopUpTypeTO:
                 _titleText.gameObject.SetActive(true);
                 _bodyText.gameObject.SetActive(false);
                 _validateButton.gameObject.SetActive(false);
                 _cancelButton.gameObject.SetActive(false);
                 _okButton.gameObject.SetActive(true);
                 break;
-            case CommonPopupModel.PopupType.POP_UP_TYPE_B_V_C:
+            case CommonPopupModel.PopupType.PopUpTypeBVC:
                 _titleText.gameObject.SetActive(false);
                 _bodyText.gameObject.SetActive(true);
                 _validateButton.gameObject.SetActive(true);
                 _cancelButton.gameObject.SetActive(true);
                 _okButton.gameObject.SetActive(false);
                 break;
-            case CommonPopupModel.PopupType.POP_UP_TYPE_B_0:
+            case CommonPopupModel.PopupType.PopUpTypeB0:
                 _titleText.gameObject.SetActive(false);
                 _bodyText.gameObject.SetActive(true);
                 _validateButton.gameObject.SetActive(false);

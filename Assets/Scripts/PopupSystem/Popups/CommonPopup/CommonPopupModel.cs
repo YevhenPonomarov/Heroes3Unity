@@ -6,12 +6,12 @@ namespace PopupSystem.Popups.CommonPopup
     {
         public enum PopupType
         {
-            POP_UP_TYPE_T_B_V_C, // Title body Validate cancel
-            POP_UP_TYPE_T_B_O, // Title body ok
-            POP_UP_TYPE_T_V_C, // Title validate cancel
-            POP_UP_TYPE_T_O, // Title ok
-            POP_UP_TYPE_B_V_C, // body validate cancel
-            POP_UP_TYPE_B_0 // body Validate cancel
+            PopUpTypeTBVC, // Title body Validate cancel
+            PopUpTypeTBO, // Title body ok
+            PopUpTypeTVC, // Title validate cancel
+            PopUpTypeTO, // Title ok
+            PopUpTypeBVC, // body validate cancel
+            PopUpTypeB0 // body Validate cancel
         }
 
         public PopupType Type { get; }

@@ -2,9 +2,9 @@
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace PopupSystem
+namespace PopupSystem.Popups
 {
-    public class BasePopup<TModel> : IPopup where TModel : BasePopupModel
+    public abstract class BasePopup<TModel> : IPopup where TModel : BasePopupModel
     {
         protected virtual string PREFAB_PATH{ get; }
         public TModel Model { get; }

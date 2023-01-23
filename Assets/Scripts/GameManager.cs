@@ -1,3 +1,4 @@
+using PopupSystem;
 using PopupSystem.Popups.CommonPopup;
 using UnityEngine;
 
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
     public void OnClickButton1()
     {
         
-        var model = new CommonPopupModel(CommonPopupModel.PopupType.POP_UP_TYPE_T_B_V_C,
+        var model = new CommonPopupModel(CommonPopupModel.PopupType.PopUpTypeTBVC,
             "It's a title",
             "Add description here",
             "Yes",
@@ -44,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     public void OnClickButton2()
     {
-        var model = new CommonPopupModel(CommonPopupModel.PopupType.POP_UP_TYPE_T_B_O,
+        var model = new CommonPopupModel(CommonPopupModel.PopupType.PopUpTypeTBO,
             "It's a title",
             "Add description here",
             "Yes",
@@ -61,7 +62,7 @@ public class GameManager : MonoBehaviour
 
     public void OnClickButton3()
     {
-        var model = new CommonPopupModel(CommonPopupModel.PopupType.POP_UP_TYPE_T_O,
+        var model = new CommonPopupModel(CommonPopupModel.PopupType.PopUpTypeTO,
             "It's a title",
             "",
             "Yes",
